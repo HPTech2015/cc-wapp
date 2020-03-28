@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CountryCapture</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h1>CountryCapture</h1>
+			<p>Photography of Spring Texas</p>
+		</div>
+		<div id="app" class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Engagement</h3>
+					<p>{{ perSession }}  per session.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Weddings</h3>
+					<p>{{ perHour }} per hour.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Family</h3>
+					<p>{{ perSession }}  per session.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Maternity</h3>
+					<p>{{ perSession }}  per session.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Maternity</h3>
+					<p>{{ perSession }}  per session.</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script>
+			var vm = new Vue({
+				el: "#app",
+				data: {
+					perSession: "$45",
+					perHour: "$200"
+				}
+			});
+		</script>
+	</body>
+</html>
